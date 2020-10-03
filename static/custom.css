@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+    color:red;
+    text-align: center;
+    
+}
+h1{
+    text-decoration:underline;
+    font-size:min(10vw,60px);
+    
+}
+a{
+    border: 1px solid red;
+    font-size:30px;
+    border-style:solid;
+    border-color:red;
+    border-radius: 10px;
+    padding:3px;
+    text-decoration: none;
+    color:purple;
+}
+a:hover{
+    padding:5px;
+    color:rgb(179, 84, 179);
+}
+span{
+    color: red;
+    position: fixed;
+    bottom: 2vh;
+    font-size:3vw;
+    
+}
+@keyframes example {
+    0% {color: red;bottom: 2vh}
+    50% {color: green;bottom: 3vh}
+    100% {color: red;bottom: 2vh}
+    
+  }
+.statistika1{
+    right: calc(50vw + 10em);
+    animation: example 2s infinite;
+    animation-delay: 0s;
+}
+.statistika2{
+    right: calc(50vw + 2em);
+    animation: example 2s infinite;
+    animation-delay: 0.5s;
+}
+.statistika3{
+    left: calc(50vw + 1.8em);
+    animation: example 2s infinite;
+    animation-delay: 1s;
+}
+.statistika4{
+    left: calc(50vw + 8.5em);
+    animation: example 2s infinite;
+    animation-delay: 1.5s;
+}
