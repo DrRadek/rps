@@ -1,2 +1,2 @@
-# rps
- 
+# odkaz
+https://drradek.pythonanywhere.com/
