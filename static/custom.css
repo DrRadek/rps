@@ -76,14 +76,14 @@ span{
 .vyhra_prohra{
     opacity: 0%;
     animation: animace_vyhra_prohra_dolu 2s forwards, animace_vyhra_prohra_blikani 0.5s infinite alternate-reverse;
-    animation-delay: 2.5s;
+    animation-delay: 1.2s;
 }
 .hrat_znovu{
     top:-100px;
     position: relative;
     
     animation: animace_hrat_znovu 2s forwards;
-    animation-delay: 2s;
+    animation-delay: 0.7s;
 }
 @keyframes example {
     0% {color: red;bottom: 2vh}
