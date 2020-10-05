@@ -17,10 +17,23 @@
 </head>
 <body>
     <h1>Kámen Nůžky Papír</h1>
-    <h2>Hráč</h2>{{hrac1}}<br>
-    <h2>Bot</h2>{{hrac2}}<br>
-    <h2>{{vyhra}}</h2>
-    <a href="/">hrát znovu</a>
+    
+    
+    {% if vyhra == "vyhrál hráč" %}
+        <img src="/static/obrázky/{{hrac2}}.png" class="bot" width="90px">
+        <img src="/static/obrázky/{{hrac1}}.png" class="hrac animace_hrace_vyhra" width="90px">
+    {% elif vyhra == "vyhrál bot" %}
+        <img src="/static/obrázky/{{hrac1}}.png" class="hrac" width="90px">
+        <img src="/static/obrázky/{{hrac2}}.png" class="bot animace_bota_vyhra" width="90px"> 
+    {% else %}
+        <img src="/static/obrázky/{{hrac1}}.png" class="hrac animace_hrace_remiza" width="90px">
+        <img src="/static/obrázky/{{hrac2}}.png" class="bot animace_bota_remiza" width="90px">
+    {% endif %}
+    <h2 class = "mezera_pod">Hráč</h2>
+    <h2 class = "mezera_pod">Bot</h2>
+    <h2 class="vyhra vyhra_prohra">{{vyhra}}</h2>
+    <a href="/" class="odkaz hrat_znovu">hrát znovu</a>
+    
     <span class="statistika1">výhry hráče:{{vyhry[0]}}</span>
     <span class="statistika2">výhry bota:{{vyhry[1]}}</span>
     <span class="statistika3">remízy:{{vyhry[2]}}</span>
